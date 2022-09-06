@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <main class="main">
+            <div class="main-item">
+                <h1 class="main-title">Украшение собственного производства</h1>
+                <p class="main-text">Все изделия создаются с любовью для каждого клиента</p>
+                <a href="" class="link">Сделать расчет и заказ </a>
+            </div>
+            <div class="main-image">
+                <img src="images/img1.png" alt="">
+                <img src="images/img2.png" alt="">
+               
+            </div>
+        </main>
+        <section class="products">
+            <h2 class="title-h2">Наши изделия</h2>
+            <div class="grid">
+                <div class="grid-cover">
+                    <img src="images/product1.png">
+                </div>
+                <div class="grid-cover">
+                    <img src="images/product2.png">
+                </div>
+                <div class="grid-cover">
+                    <img src="images/producrt4.png">
+                </div>
+                <div class="grid-cover">
+                    <img src="images/product3.png">
+                </div>
+            </div>
+        </section>
+        <div class="cost">
+            <div class="cost-title">
+                <svg class="circle" width="200" height="200" viewBox="0 0 200 200">
+                    <path id="circleShape" class="circle-shape" 
+                    d="M 20, 100 a 80 80 0 1,1 160,0 a 80,80 0 1,1 -160,0"
+                    fill="none"></path>
+                    <path class="circle-arrow" 
+                    d="M 75 100 L 125 100 L 110 85 M 125 100 L 110 115" 
+                    fill="none"
+                    stroke="#2b2024" stroke-width="2.5"></path>
+                    <text class="circle-text">
+                        <textPath href="#circleShape">Рассчитать стоимость</textPath>
+                    </text>
+                </svg>
+            </div>
+            <div class="cost-calc">
+                <form action="" class="form">
+                    <p class="form-text">Выберите изделие:</p>
+                    <select class="form-select" id="select">
+                        <option value="0" selected disabled>Выбрать из списка</option>
+                        <option value="3000">Часы (3000 руб)</option>
+                        <option value="5000">Робот (5000 руб)</option>
+                        <option value="1000">Карты (1000 руб)</option>
+                    </select>
+                    <p class="form-text" >Укажите количество:</p>
+                    <input  id="kolvo" class="form-input" type="number" value="0">
+                    <button class="link" type="button" id="btn">Рассчитать</button>
+                </form>
+                <div id="info" class="total" style="display: none;">
+                    <p class="total-price">Итог: <span id="price"></span> руб</p>
+                    <p class="total-info">Оставьте заявку по почте: <a class="total-email" href="mailto:dadadad">agaga</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
